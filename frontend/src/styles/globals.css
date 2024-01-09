@@ -1,9 +1,58 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+table {
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 20px;
 }
+
+th, td {
+  padding: 12px;
+  border: 1px solid;
+
+  text-align: left;
+
+}
+
+thead {
+  background-color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  background-color: paleturquoise;
+  border: black 1px solid;
+  border-radius: 10px;
+  transition: white 0.3s, black 0.3s;
+}
+
+.process-button {
+  border: black 1px solid;
+
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: violet;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+

@@ -1,62 +1,57 @@
 ## DNA Engineering Full-Stack Assignment
 Build a CSV Parser.
 
-## Table of content
-- [Prerequisites](#prerequisites)
-- [Before We begin](#before-we-begin)
-- [Assignment](#assignment)
-- [What we expect](#what-we-expect)
-- [Bonus points](#bonus-points)
+### Interface 1
 
-## Prerequisites
-- Java 17
-- Node Js v20.10.0
+The button for uploading a CSV file is displayed.
 
-## Before we begin
-- In this assignment, you will be asked to write, and test your code.
-- Make sure you respect clean code guidelines.
-- Read the assignment carefully.
 
-## Description
-You are invited to create a CSV parser using Java/Spring Boot, and build UI to display results using Next.js/React.
 
-## Assignment
 
-### Backend (CSV Parser)
+![Interface 1](./static/1.png)
 
-#### Tasks
+### Interface 2
+Once you have selected the CSV file, the app will display a 'Process File' button.
+See Interface 2 for a screenshot.
+![Interface 2](./static/2.png)
 
-- Write a service in Java that will read and process the attached CSV(comma separated values) file at `data/employees.csv`.
 
-- This service should read, extract and process data in a suitable data structure.
+### Interface 3
+After the file is processed by the service, the employee data and job details are displayed in a table format.
 
-- Process this data to return the list of employees and a summary indicating the average salary for each job title.
+See Interface 3 for reference.
+![Interface 3](./static/3.png)
+![Interface 3](./static/4.png)
+
+
+## How to Run the Project
 
 ### Frontend
 
-#### Tasks
-Implement a simple user interface that will allow the user to upload the file and display the results of your processing.
+To run the frontend, follow these steps:
 
-#### Interfaces
+1.
 
-Respect the following design flow:
 
-![Frontend interfaces](./static/interfaces.png)
+Navigate to the `frontend` folder.
+2.
 
-- **Interface-1**: Contain an upload button.
-- **Interface-2**: The Process button is added when you choose a file.
-- **Interface-3**: 2 Tables showing the processing results.
+Run the following commands:
 
-**Table 1**: Employee information, displays a paginated list of employees.
+```bash
+npm
+   install
+npm
+   run dev
+```
 
-**Table 2**: Jobs summary, displays for each job title, the average salary for employees.
 
-## What we expect
-- Write a concise, easy to understand code.
-- Use good practices.
-- Write unit tests for your java code.
-- Append to this README your approach and provide instructions to run your project.
+To start the frontend development server and install the required dependencies, follow these steps:
 
-## Bonus points
-- Implement your own CSV file parser instead of using a library.
-- Use design patterns.
+
+1. Run the command to navigate to the `backend` folder.
+2. Run the following commands:
+   ```bash mvn clean install```
+   To clean the project, build
+   it, and start the backend server using the generated JAR file, run the command 'java -jar target/backend-0.0.1-SNAPSHOT.jar'.
+ 
